@@ -41,7 +41,7 @@ module Overcommit::Hook::CommitMsg
       unless git_merge_commit.stdout.strip.empty?
         # This is a merge so it must contain the branch name in the destination.
         issue_merge_pattern = merge_pattern(issue_key)
-        # TODO: Detect the different between editing a merge commit and making a new commit after a merge commit
+        # TODO: Detect the difference between editing a merge commit and making a new commit after a merge commit
         return :pass if issue_merge_pattern.match?(subject)
         return :fail, "Subject '#{subject}' does not contain the Issue Key '#{issue_key}' or match Issue Key Merge pattern '#{issue_merge_pattern}'" unless insert_automatically
       else
