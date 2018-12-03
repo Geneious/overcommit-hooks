@@ -37,6 +37,6 @@ Now install the other overcommit hooks:
 overcommit --install
 ```
 
-[git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
-[overcommit](https://github.com/brigade/overcommit)
-[rbenv](https://github.com/rbenv/rbenv/)
+[git submodule]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
+[overcommit]: https://github.com/brigade/overcommit
+[rbenv]: https://github.com/rbenv/rbenv/
