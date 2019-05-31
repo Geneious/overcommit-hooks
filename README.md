@@ -44,6 +44,11 @@ Add a [Overcommit configuration] file and enable the hooks that you want to use:
 vim .overcommit.yml
 ```
 
+After you modify the configuration then you will need to sign it:
+```bash
+overcommit --sign
+```
+
 ## Hooks
 
 ### commit-msg
